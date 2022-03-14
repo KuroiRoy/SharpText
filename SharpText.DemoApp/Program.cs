@@ -29,7 +29,11 @@ namespace SharpText.DemoApp
             "Fonts/AmaticSC-Regular.ttf",
             "Fonts/LeArchitect.ttf",
             "Fonts/Sacramento-Regular.ttf",
-            "Fonts/neon2.ttf"
+            "Fonts/neon2.ttf",
+            "Fonts/GapSansBold.ttf",
+            "Fonts/OstrichSans-Heavy.otf",
+            "Fonts/terminal-grotesque_open.otf",
+            "Fonts/YoungSerif-Regular.otf"
         };
         private static int currentColorIndex = 0;
         private static Color[] colors =
@@ -116,7 +120,7 @@ namespace SharpText.DemoApp
             infoTextRenderer.DrawText("Up/Down = Increase/Decrease Font Size", new Vector2(xInset, xAccumulated += lineSpacing + infoFont.FontSizeInPixels), colors[0]);
             infoTextRenderer.DrawText("Right/Left = Increase/Decrease Letter Spacing", new Vector2(xInset, xAccumulated += lineSpacing + infoFont.FontSizeInPixels), colors[0]);
             infoTextRenderer.DrawText("Enter = Change Font", new Vector2(xInset, xAccumulated += lineSpacing + infoFont.FontSizeInPixels), colors[0]);
-            infoTextRenderer.DrawText("Space = Change Colorm", new Vector2(xInset, xAccumulated += lineSpacing + infoFont.FontSizeInPixels), colors[0]);
+            infoTextRenderer.DrawText("Space = Change Color", new Vector2(xInset, xAccumulated += lineSpacing + infoFont.FontSizeInPixels), colors[0]);
             infoTextRenderer.DrawText($"Current Font: {demoFont.Name}", new Vector2(xInset, xAccumulated += lineSpacing + infoFont.FontSizeInPixels), colors[0]);
 
             demoTextRenderer.DrawText("Sixty zippers were quickly picked from the woven jute bag.", new Vector2(xInset, xAccumulated += (lineSpacing * 5) + infoFont.FontSizeInPixels), colors[currentColorIndex], letterSpacing);
